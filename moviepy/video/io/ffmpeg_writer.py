@@ -267,7 +267,7 @@ def ffmpeg_write_video(
 
     if write_logfile:
         logfile.close()
-    logger(message="MoviePy - Done !")
+    # logger(message="MoviePy - Done !")
 
 
 def ffmpeg_write_image(filename, image, logfile=False, pixel_format=None):
