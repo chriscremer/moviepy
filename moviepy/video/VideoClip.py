@@ -364,7 +364,7 @@ class VideoClip(Clip):
 
         # enough cpu for multiprocessing ? USELESS RIGHT NOW, WILL COME AGAIN
         # enough_cpu = (multiprocessing.cpu_count() > 1)
-        logger(message="MoviePy - Building video %s." % filename)
+        # logger(message="MoviePy - Building video %s." % filename)
         if make_audio:
             self.audio.write_audiofile(
                 audiofile,
@@ -395,7 +395,7 @@ class VideoClip(Clip):
         if remove_temp and make_audio:
             if os.path.exists(audiofile):
                 os.remove(audiofile)
-        logger(message="MoviePy - video ready %s" % filename)
+        # logger(message="MoviePy - video ready %s" % filename)
 
     @requires_duration
     @use_clip_fps_by_default
