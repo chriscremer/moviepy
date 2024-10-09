@@ -211,4 +211,4 @@ def ffmpeg_audiowrite(
 
     if write_logfile:
         logfile.close()
-    logger(message="MoviePy - Done.")
+    # logger(message="MoviePy - Done.")
